@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<launch>
+    <!-- Open Gazebo with designed world-->
+    <include file="$(find my_robot_simulation)/launch/gazebo.launch"/>
+    <!-- Spawn robot -->
+    <include file="$(find my_robot_simulation)/launch/spawn_my_robot.launch"/>
+    <!-- Enable controllers -->
+    <include file="$(find my_robot_description)/launch/my_robot_control_wheels.launch"/>
+
+</launch>
+
+
